@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+
+
+     {% for user in results %}
+		{{ user | safe }}
+	{% endfor %}
+
+{% endblock %}
+

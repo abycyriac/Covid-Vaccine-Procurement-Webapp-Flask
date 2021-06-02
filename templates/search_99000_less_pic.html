@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+<head> Users With Salary less than 99000 </head>
+
+	{% for user in users %}
+		{{ user | safe }}
+	{% endfor %}
+
+{% endblock %}

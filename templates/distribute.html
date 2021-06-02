@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+<h1>Distribute Vaccines to Local Bodies</h1>
+
+{{ wtf.quick_form(form) }}
+	{% if result %}
+		{{count}}{{result}}{{unit}},{{state}}
+	{% endif %}
+
+	
+    
+
+
+{% endblock %}

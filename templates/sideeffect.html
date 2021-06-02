@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+{{ wtf.quick_form(form) }}
+
+      {% if result %}
+      	{{result}}{{id}} after dose {{dose}} is updated     
+      {% endif %}
+
+{% endblock %}

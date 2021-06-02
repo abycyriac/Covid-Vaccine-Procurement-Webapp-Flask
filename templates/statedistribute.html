@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+{{ wtf.quick_form(form) }}
+	{% if result %}
+		{{ result }} {{count}} vaccines to {{state}}
+	{% endif %}
+
+{% endblock %}

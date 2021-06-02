@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+<h1>Procure Vaccine from Manufacturer</h1>
+
+{{ wtf.quick_form(form) }}
+	{% for res in result %}
+		Procured Vaccine:
+		{{ res | safe }}
+	{% endfor %}
+
+	Manufacture's Database:
+    {% for result in results %}
+		{{ result | safe }}
+	{% endfor %}
+
+
+{% endblock %}
